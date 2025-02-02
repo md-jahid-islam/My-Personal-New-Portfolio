@@ -6,18 +6,18 @@ import Typewriter from 'typewriter-effect';
 
 //===================== AboutSection part start 
 const AboutSection = () => (
-  <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16 bg-gradient-to-r from-blue-500 to-teal-500 p-8 rounded-lg shadow-lg">
+  <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16  p-8 rounded-lg shadow-lg">
     {/* Section Title */}
     <div className="relative text-center sm:text-left pt-28 flex justify-center items-center flex-wrap ">
-      <h2 className="text-2xl font-bold text-white">About Me</h2>
-      <div className="absolute border-2 border-white w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
+      <h2 className="text-2xl font-bold text-blue-500">About Me</h2>
+      <div className="absolute border-2 border-blue-500 w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
     </div>
     {/* About Details */}
     <div className="mt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center">
       {/* About Text */}
       <div>
-        <p className="text-white leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl">
-          Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
+        <p className=" text-blue-500 leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl">
+         Hi I'm Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
           <Typewriter 
             options={{
               strings: ["continuous ", "learning", "and growth."],
@@ -29,7 +29,7 @@ const AboutSection = () => (
         </p>
       </div>
       {/* Personal Details */}
-      <div className="text-sm sm:text-base mt-10 lg:mt-0 lg:ml-10 text-white">
+      <div className="text-sm sm:text-base mt-10 lg:mt-0 lg:ml-10 text-blue-500">
         {[{
           label: 'Name', value: 'Jahidul Islam'
         }, {
@@ -59,9 +59,9 @@ const AboutSection = () => (
 
 //===================== EducationSection part start
 const EducationSection = () => (
-  <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500 p-8 rounded-lg shadow-lg">
-    <h2 className="text-2xl font-bold text-white pt-10 text-center sm:text-left">Education</h2>
-    <div className="divider bg-white mt-2 mb-4"></div>
+  <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg">
+    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left">Education</h2>
+    <div className="divider mt-2 mb-4 text-blue-500 "></div>
 
     {[{
       year: 'Degree ongoing Student Bachelor of Social Science -2024',
@@ -77,9 +77,9 @@ const EducationSection = () => (
       description: 'Jahidul Islam completed his Secondary School Certificate (SSC) in (Commerce) at Hazrat Shahjala (Ra.) High School, Baniachong, Habiganj, in 2021.'
     }].map((edu, index) => (
       <div key={index} className="education-item mt-12">
-        <div className="year bg-slate-700 py-2 px-4 text-white">{edu.year}</div>
+        <div className="year bg-slate-700 py-2 px-4 text-blue-500">{edu.year}</div>
         <h3 className="title font-bold text-lg mt-2">{edu.title}</h3>
-        <p className="description text-sm mt-2 text-white">{edu.description}</p>
+        <p className="description text-sm mt-2 text-blue-500">{edu.description}</p>
       </div>
     ))}
   </div>
@@ -87,9 +87,9 @@ const EducationSection = () => (
 
 //===================== ExperienceSection part start
 const ExperienceSection = () => (
-  <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-white  from-green-400 via-blue-500 to-purple-600 p-8 rounded-lg shadow-lg">
-    <h2 className="text-2xl font-bold text-white text-center sm:text-left">Experience</h2>
-    <div className="divider bg-white mt-2 mb-4"></div>
+  <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-blue-500 p-8 rounded-lg shadow-lg">
+    <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left">Experience</h2>
+    <div className="divider bg-[#e2ecf6] mt-2 mb-4"></div>
 
     {[{
       period: 'Creative It Institute Uttara Dhaka Bangladesh -2024',
@@ -101,9 +101,9 @@ const ExperienceSection = () => (
       description: 'Jahidul Islam is currently learning Node.js at Creative IT Institute.'
     }].map((exp, index) => (
       <div key={index} className="experience-item mt-12">
-        <div className="period bg-slate-700 py-2 px-4 text-white">{exp.period}</div>
-        <h3 className="title font-bold text-lg mt-2 text-white">{exp.title}</h3>
-        <p className="description text-sm mt-2 text-white">{exp.description}</p>
+        <div className="period bg-slate-700 py-2 px-4 text-blue-500">{exp.period}</div>
+        <h3 className="title font-bold text-lg mt-2 text-blue-500">{exp.title}</h3>
+        <p className="description text-sm mt-2 text-blue-500">{exp.description}</p>
       </div>
     ))}
   </div>
@@ -111,12 +111,12 @@ const ExperienceSection = () => (
 
 //====================== SkillSection part start
 const SkillSection = () => (
-  <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16 bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 p-8 rounded-lg shadow-lg">
+  <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16  p-8 rounded-lg shadow-lg">
     <div className="flex justify-center items-center relative mb-4">
-      <h2 className="relative text-2xl font-bold text-white text-center sm:text-left">Coding Skills</h2>
-      <h3 className="absolute border-2 border-white w-[150px] sm:w-[200px] pt-10"></h3>
+      <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left">Coding Skills</h2>
+      <h3 className="absolute border-2 border-blue-500 w-[150px] sm:w-[200px] pt-10"></h3>
     </div>
-    <div className="divider bg-white mt-[100px] mb-8"></div>
+    <div className="divider mt-[100px] mb-8"></div>
 
     <div className="skills grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-[40px] sm:mt-16">
       {[{
@@ -157,13 +157,13 @@ const SkillSection = () => (
 
           {/* Icon Inside Circle with Hover Effects */}
           <div className="icon absolute inset-0 flex justify-center items-center transform transition-all duration-500">
-            <div className="bg-white p-4 rounded-full border-4 border-[#FF204E] flex justify-center items-center transform transition-all duration-300 hover:bg-[#FF204E] hover:text-white hover:scale-110">
+            <div className=" p-4 rounded-full border-4 border-[#FF204E] flex justify-center items-center transform transition-all duration-300 hover:bg-[#FF204E] hover:text-white hover:scale-110">
               {skill.icon}
             </div>
           </div>
 
           {/* Skill Name */}
-          <p className="skill-name mt-2 text-sm sm:text-base text-white">{skill.name}</p>
+          <p className="skill-name mt-2 text-sm sm:text-base text-blue-500">{skill.name}</p>
         </div>
       ))}
     </div>

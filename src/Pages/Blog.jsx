@@ -8,12 +8,12 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#F9F6E6] via-[#00337C] to-[#1E293B] text-white py-20 transition-all duration-1000">
+    <div className="min-h-screen py-20 transition-all duration-1000">
       <div className="container px-4 md:px-0">
         {/* Header Section */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-white mb-3 animate-titleGlow">Blogs.</h2>
-          <div className="w-40 h-[3px] bg-white mx-auto animate-underlineGlow"></div>
+          <h2 className="text-4xl font-bold text-blue-500 mb-3 animate-titleGlow">Blogs.</h2>
+          <div className="w-40 h-[3px] bg-blue-500 mx-auto animate-underlineGlow"></div>
         </div>
 
         {/* Blog Cards Section */}

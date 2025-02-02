@@ -1,85 +1,8 @@
-// import React, { useState } from "react";
-// import { TbArrowLeftFromArc } from "react-icons/tb";
-// import { Link } from "react-router-dom";
+ import React, { useState } from "react";
+ import { TbArrowLeftFromArc } from "react-icons/tb";
+ import { Link } from "react-router-dom";
 
-// const Services = () => {
-//   const [expanded, setExpanded] = useState(null); 
-//   const services = [
-//     {
-//       id: 1,
-//       title: "Firebase Development",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo mauris purus molestie fames.",
-//       imgSrc: "public/images/firebase.png",
-//     },
-//     {
-//       id: 2,
-//       title: "Visual Branding API",
-//       description: "A aliquam hac quis habitant dolor nunc metus sed. Sed commodo mauris purus molestie fames.",
-//       imgSrc: "public/images/brand.png",
-//     },
-//     {
-//       id: 3,
-//       title: "React Development",
-//       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo mauris purus molestie fames.",
-//       imgSrc: "public/images/react.png",
-//     },
-//     {
-//       id: 4,
-//       title: "Web Development",
-//       description: "Diam lacus faucibus eget dolor phasellus aliquam sit in. Eget ultricies turpis elit augue cras mauris lorem mauris.",
-//       imgSrc: "public/images/webdevelop.png",
-//     },
-//   ];
-
-//   const toggleExpand = (id) => {
-//     setExpanded((prev) => (prev === id ? null : id)); // ক্লিক করলে টগল হবে
-//   };
-
-//   return (
-//     <div className="container mx-auto px-4 py-10">
-//       {/* Header Section */}
-//       <div className="text-center">
-//         <h2 className="text-3xl font-bold text-[#4f4f4f] dark:text-white mt-11 ">Services</h2>
-//         <div className="w-40 h-[3px] bg-[#FF204E] mx-auto my-2"></div>
-//         <h2 className="mt-4 text-lg md:text-2xl font-bold text-[#4f4f4f] dark:text-gray-300">
-//           Building Digital Products With Better Experience
-//         </h2>
-//         <p className="mt-3 text-sm md:text-lg text-[#4f4f4f] dark:text-gray-400">
-//           Our vision is to be a trailblazing force in the world of web design and development, recognized for our unwavering commitment to excellence, integrity, and customer satisfaction.
-//         </p>
-//       </div>
-
-//       {/* Services Grid */}
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-//         {services.map((service) => (
-//           <div key={service.id} className="relative text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-all transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
-//             <img className="w-20 h-20 mx-auto rounded-lg mt-5 hover:scale-110 transition duration-300" src={service.imgSrc} alt={service.title} />
-//             <h2 className="text-lg md:text-xl font-bold text-[#4f4f4f] dark:text-gray-300 mt-5">{service.title}</h2>
-
-//             <button onClick={() => toggleExpand(service.id)} className="block mt-4 text-lg text-[#4f4f4f] dark:text-gray-300 transform hover:scale-110 transition duration-300">
-//               <TbArrowLeftFromArc className={`inline-block text-[20px] ${expanded === service.id ? "rotate-180" : ""} transition-transform duration-300`} />
-//             </button>
-
-//             {/* Expanded Description */}
-//             <div className={`overflow-hidden transition-all duration-500 ${expanded === service.id ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-//               <p className="text-sm md:text-base text-[#4f4f4f] dark:text-gray-400">
-//                 {service.description}
-//               </p>
-//               <Link to="#" className="mt-3 inline-block text-sm font-semibold text-[#FF204E] hover:text-[#008DDA] transition duration-300">Read More</Link>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Services;
-import React, { useState } from "react";
-import { TbArrowLeftFromArc } from "react-icons/tb";
-import { Link } from "react-router-dom";
-
-const Services = () => {
+ const Services = () => {
   const [expanded, setExpanded] = useState(null); 
 
   const services = [
@@ -151,22 +74,22 @@ const Services = () => {
       ]
     },
   ];
-
+  // Toggle the expanded service
   const toggleExpand = (id) => {
-    setExpanded((prev) => (prev === id ? null : id)); // Toggle the expanded service
+    setExpanded((prev) => (prev === id ? null : id));
   };
 
   return (
     <div className="container mx-auto px-4 py-10">
       {/* Header Section */}
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-[#4f4f4f] dark:text-white mt-11 ">Services</h2>
+        <h2 className="text-3xl font-bold text-[#4f4f4f] dark:text-white mt-11 "> My Services</h2>
         <div className="w-40 h-[3px] bg-[#FF204E] mx-auto my-2"></div>
         <h2 className="mt-4 text-lg md:text-2xl font-bold text-[#4f4f4f] dark:text-gray-300">
           Building Digital Products With Better Experience
         </h2>
         <p className="mt-3 text-sm md:text-lg text-[#4f4f4f] dark:text-gray-400">
-          Our vision is to be a trailblazing force in the world of web design and development, recognized for our unwavering commitment to excellence, integrity, and customer satisfaction.
+          Our vision is to be a trailblazing force in the world of web design and development, recognized for  <br /> our unwavering commitment to excellence, integrity, and customer satisfaction.
         </p>
       </div>
 
@@ -195,6 +118,6 @@ const Services = () => {
       </div>
     </div>
   );
-};
+ };
 
-export default Services;
+ export default Services;

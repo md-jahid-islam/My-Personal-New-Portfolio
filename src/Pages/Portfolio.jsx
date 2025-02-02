@@ -19,7 +19,7 @@
             loop: true,
             delay: 75,
             cursor: "|",
-            pauseFor: 2000, // Pause for a bit before restarting the animation
+            pauseFor: 2000, 
           }}
         />
       </h3>
@@ -33,9 +33,9 @@
       </div>
     </div>
   </div>
-);
+ );
 
-const Portfolio = () => {
+ const Portfolio = () => {
   const projects = [
     {
       image: "public/images/filtter.png",
