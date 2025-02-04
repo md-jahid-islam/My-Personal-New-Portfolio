@@ -78,7 +78,7 @@
           <img className="absolute bottom-0 right-0 transform translate-x-1/3 translate-y-1/3 w-8 h-8 md:w-12 md:h-12 rounded-full animate-spin" src="public/images/img2.png" alt="Decorative icon 2" />
 
           <h3 className="absolute pt-[240px] text-xl md:text-2xl font-bold text-[#578FCA] ">MD.Jahidul Islam</h3>
-          
+           {/*Typewriter Section */}
           <div className="absolute pt-[280px] text-lg md:text-xl font-bold text-[#578FCA] ">
             <Typewriter
               options={{

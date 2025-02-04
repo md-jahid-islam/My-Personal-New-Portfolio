@@ -1,11 +1,12 @@
-import React from 'react';
-import CountUp from 'react-countup';
-import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaGitAlt, FaFigma } from 'react-icons/fa';
-import { SiTailwindcss, SiJquery, SiFirebase } from 'react-icons/si';
-import Typewriter from 'typewriter-effect';
-
-//===================== AboutSection part start 
-const AboutSection = () => (
+ import React from 'react';
+ import CountUp from 'react-countup';
+ import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaGitAlt, FaFigma } from 'react-icons/fa';
+ import { SiTailwindcss, SiJquery, SiFirebase } from 'react-icons/si';
+ import Typewriter from 'typewriter-effect';
+ //================= Certificates ==============\\
+  
+ //===================== AboutSection part start 
+ const AboutSection = () => (
   <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16  p-8 rounded-lg shadow-lg">
     {/* Section Title */}
     <div className="relative text-center sm:text-left pt-28 flex justify-center items-center flex-wrap ">
@@ -83,34 +84,39 @@ const EducationSection = () => (
       </div>
     ))}
   </div>
-);
+ );
 
-//===================== ExperienceSection part start
-const ExperienceSection = () => (
+ //===================== ExperienceSection part start
+ const ExperienceSection = () => (
   <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-blue-500 p-8 rounded-lg shadow-lg">
     <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left">Experience</h2>
     <div className="divider bg-[#e2ecf6] mt-2 mb-4"></div>
-
+    
     {[{
       period: 'Creative It Institute Uttara Dhaka Bangladesh -2024',
       title: 'Frontend Developer with React',
-      description: 'As a Frontend Developer specializing in React, Jahidul Islam has experience with various web technologies including React, Redux, Tailwind CSS, Bootstrap, and Firebase.'
-    }, {
+      description: 'As a Frontend Developer specializing in React, Jahidul Islam has experience with various web technologies including Html,Css, Javascript, React, Redux, Tailwind CSS, Bootstrap, Frameworks,Firebase,Firebase Authentication  is the process of verifying a users identity or the authenticity of a document It s used to protect systems, data, and networks from attacks. How it works Identification The user establishes their identity, usually with a username Authorization The system verifies that the user has permission to access the system Credentials The user provides an agreed-upon piece of information, such as a password, card, fingerprint, or voice recognition Why it important Authentication protects systems, data, and networks from attacks Its used when a server needs to know whos accessing its information or site Its used when a client needs to know that the server is who it claims to be Examples Multi-factor authentication  Requires users to provide two forms of verification before gaining access Single sign-on (SSO) Streamlines the verification process so that users only have to provide credentials at one access point!! '
+    }, { 
       period: 'Creative It Institute Uttara Dhaka Bangladesh -2024',
       title: 'Node.Js',
       description: 'Jahidul Islam is currently learning Node.js at Creative IT Institute.'
     }].map((exp, index) => (
+      
       <div key={index} className="experience-item mt-12">
         <div className="period bg-slate-700 py-2 px-4 text-blue-500">{exp.period}</div>
+        
         <h3 className="title font-bold text-lg mt-2 text-blue-500">{exp.title}</h3>
+        
         <p className="description text-sm mt-2 text-blue-500">{exp.description}</p>
+       
       </div>
     ))}
+    
   </div>
-);
+ );
 
-//====================== SkillSection part start
-const SkillSection = () => (
+ //====================== SkillSection part start
+ const SkillSection = () => (
   <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16  p-8 rounded-lg shadow-lg">
     <div className="flex justify-center items-center relative mb-4">
       <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left">Coding Skills</h2>
@@ -124,7 +130,7 @@ const SkillSection = () => (
       }, {
         name: 'CSS3', proficiency: 100, icon: <FaCss3Alt size={40} className="text-[#1572B6]" />
       }, {
-        name: 'JavaScript', proficiency: 100, icon: <FaJs size={40} className="text-[#F7DF1E]" />
+        name: 'JavaScript', proficiency: 85, icon: <FaJs size={40} className="text-[#F7DF1E]" />
       }, {
         name: 'jQuery', proficiency: 95, icon: <SiJquery size={40} className="text-[#0769AD]" />
       }, {

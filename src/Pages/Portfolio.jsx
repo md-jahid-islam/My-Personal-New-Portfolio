@@ -94,19 +94,19 @@
       githubLink: "https://github.com/md-jahid-islam/Mixedit-UP.git",
     },
     {
-      image: "public/images/newspro.png",
+      image: "public/images/calculatore.png",
       title: "News Pro",
-      category: "React.js React Router Dom Responsive Tailwind.css",
-      liveLink: "https://mixedit-up-sepia.vercel.app/",
-      githubLink: "https://github.com/md-jahid-islam/Mixedit-UP.git",
+      category: " basic html css vanila.js javascript",
+      liveLink: "https://cal-jahidul-islams-projects-8d78bc5b.vercel.app/",
+      githubLink: "https://github.com/md-jahid-islam/calculatore.git",
     },
   ];
 
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="header text-center">
-        <h2 className="text-3xl font-bold text-[#4f4f4f] mt-[100px]">Portfolio</h2>
-        <div className="w-40 h-[3px] bg-slate-400 mx-auto my-4"></div>
+        <h2 className="text-3xl font-bold text-blue-500 mt-[100px]">Portfolio</h2>
+        <div className="w-40 h-[3px] bg-blue-500 mx-auto my-4"></div>
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 mt-10">
