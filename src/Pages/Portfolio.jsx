@@ -38,7 +38,7 @@
  const Portfolio = () => {
   const projects = [
     {
-      image: "public/images/filtter.png",
+      image: "https://ibb.co.com/8LTvYqNc",
       title: "Filtter website",
       category: "React, React-Redux, React Router DOM, react-toastify, react-icons, Tailwind CSS",
       liveLink: "https://filter-website-design-responsive.vercel.app/",
