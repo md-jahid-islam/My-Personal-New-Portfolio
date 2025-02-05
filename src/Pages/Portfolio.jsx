@@ -54,7 +54,7 @@
     {
       image: "public/images/filltervercel.png",
       title: "Filtter website E-commerce Brand",
-      category: "Brand",
+      category: "Brand react react-router-dom react-icons web-vitals react-scripts ",
       liveLink: "https://filter-website-development.vercel.app/",
       githubLink: "https://github.com/md-jahid-islam/filter-website-development.git",
     },
@@ -95,11 +95,43 @@
     },
     {
       image: "public/images/calculatore.png",
-      title: "News Pro",
+      title: " Calculator",
       category: " basic html css vanila.js javascript",
       liveLink: "https://cal-jahidul-islams-projects-8d78bc5b.vercel.app/",
       githubLink: "https://github.com/md-jahid-islam/calculatore.git",
     },
+    {
+      image: "public/images/traveling.png",
+      title: "Traveling",
+      category: " react.js react router dom tailwind.css javascript farmwork bootstrap!!",
+      liveLink: "https://traveling-jet.vercel.app/",
+      githubLink: "https://github.com/md-jahid-islam/Traveling.git",
+    },
+    {
+      image: "public/images/dasboard.png",
+      title: "Dasboard",
+      category: " date-fns react react-date-range react dom react icons react-router-dom recharts sass",
+      liveLink: "https://taberna-dashboard.vercel.app/",
+      githubLink: "https://github.com/md-jahid-islam/Dashboard-.git",
+    },
+    {
+      image: "public/images/stremvib.png",
+      title: "Stremvib",
+      category: " @reduxjs/toolkit axios react dom react-router-dom react-icons react-redux react-slick redux-persist reselect slick-carousel styled-components",
+      liveLink: "https://stream-vibe-seven-eta.vercel.app/",
+      githubLink: "https://github.com/md-jahid-islam/Stream-Vibe.git",
+    },
+    {
+      image: "public/images/Eshop.png",
+      title: "News Pro",
+      category: "aos react-icons react-dom react-router-dom react-slick slick-carousel ",
+      liveLink: "https://e-commerce-shop-five-zeta.vercel.app/",
+      githubLink: "https://github.com/md-jahid-islam/E-commerce-shop.git",
+    },
+    
+    
+    
+
   ];
 
   return (
