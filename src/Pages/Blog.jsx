@@ -3,17 +3,19 @@
  import 'aos/dist/aos.css';
 
  const Blog = () => {
-  //================= useEffect AOS duration ===============\\
+ //========== useEffect AOS duration start =========//
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
+ //========== useEffect AOS duration end =========//
+ //========== design part start =========//
   return (
     <div className="min-h-screen py-20 transition-all duration-1000">
       <div className="container px-4 md:px-0">
         {/* Header Section */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-blue-500 mb-3 animate-titleGlow">Blogs.</h2>
+          <h2 className="text-4xl font-bold text-blue-500b  mb-2 animate-titleGlow mt-5">Blogs.</h2>
           <div className="w-40 h-[3px] bg-blue-500 mx-auto animate-underlineGlow"></div>
         </div>
 
@@ -26,7 +28,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/img.png"
+              src="public/images/website.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-5">
@@ -49,7 +51,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/img1.png"
+              src="public/images/mobail.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-5">
@@ -73,7 +75,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/img3.png"
+              src="public/images/website1.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-4">
@@ -87,14 +89,14 @@
               Frameworks: Get proficient with React, Angular, or Vue.js.
             </p>
           </div>
-          <div
+          <div    
             data-aos="zoom-in"
             data-aos-delay="400"
             className="relative w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 text-center bg-[#2D3748] hover:bg-[#4A5568] transition-all duration-500 rounded-lg p-6 shadow-lg group"
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/img3.png"
+              src="public/images/website2.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-4">
@@ -113,5 +115,6 @@
     </div>
   );
  };
+ //========== design part end =======//
 
  export default Blog;

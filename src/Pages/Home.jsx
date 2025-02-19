@@ -4,7 +4,7 @@
 
  const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
- // Check useEffect stored theme preference
+ //======== Check useEffect stored theme preference =======// 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -13,7 +13,7 @@
       document.documentElement.classList.add('dark');
     }
   }, []);
- //=================== toggleTheme
+ //============ toggleTheme ===========//
   const toggleTheme = () => {
     setDarkMode(!darkMode);
     if (!darkMode) {
@@ -24,6 +24,7 @@
       localStorage.setItem('theme', 'light');
     }
   };
+  //=========== deaign part start ==========//
   return (
     <>
     <div className='container'>
@@ -102,5 +103,6 @@
     </>
   );
  };
+ //=========== deaign part end ==========//
 
  export default Home;

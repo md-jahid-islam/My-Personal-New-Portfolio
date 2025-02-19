@@ -1,11 +1,13 @@
  import { 
   MoonIcon, SunIcon, HomeIcon, UserIcon, FolderIcon, 
   DocumentTextIcon, CogIcon, PhoneIcon 
- } from "@heroicons/react/24/solid";
+ } 
+ from "@heroicons/react/24/solid";
  import React, { useState, useEffect } from "react";
  import { NavLink, useNavigate, useLocation } from "react-router-dom";
  import ClipLoader from "react-spinners/ClipLoader";
- //=========== all page path start ===========\\
+
+ //=========== all page path start =========//
  const pages = [
   { path: "/home", name: "Home", icon: <HomeIcon className="w-5 h-5 inline mr-2" /> },
   { path: "/about", name: "About", icon: <UserIcon className="w-5 h-5 inline mr-2" /> },
@@ -14,20 +16,20 @@
   { path: "/services", name: "Services", icon: <CogIcon className="w-5 h-5 inline mr-2" /> },
   { path: "/contact", name: "Contact", icon: <PhoneIcon className="w-5 h-5 inline mr-2" /> }
  ];
-  //=========== all page path end ===========\\
+  //=========== all page path end ===========//
 
  const Navbar = () => {
-  //============== useState ==============\\
+  //======== useState =======//
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [loading, setLoading] = useState(true);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
- //=========== navigate ==========\\
+ //=========== navigate ==========//
   const navigate = useNavigate();
   const location = useLocation();
 
- //=========== useEffect localStorage ==============\\
+ //=========== useEffect localStorage getItem theme ========//
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -38,20 +40,20 @@
       document.body.style.backgroundColor = "#1E1E2E"; 
     }
 
-   //============= updateCursor =============\\
+   //======== updateCursor ========//
     const updateCursor = (e) => {
       setCursorPos({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", updateCursor);
-   //============ setTimeout =============\\
+   //======= setTimeout =======//
     setTimeout(() => {
       setLoading(false);
     }, 2000);
 
-   //============= mousemove ===============\\
+   //======== mousemove ========//
     return () => window.removeEventListener("mousemove", updateCursor);
   }, []);
-  //============ handleScroll event ============ \\
+  //======== handleScroll event ======== //
   useEffect(() => {
     const handleScroll = (event) => {
       let currentIndex = pages.findIndex(page => page.path === location.pathname);
@@ -67,7 +69,7 @@
     return () => window.removeEventListener("wheel", handleScroll);
   }, [location.pathname, navigate]);
 
- //============== toggleTheme ==============\\
+ //========= toggleTheme ========//
   const toggleTheme = () => {
     setDarkMode(!darkMode);
     if (!darkMode) {
@@ -80,7 +82,7 @@
       localStorage.setItem("theme", "light");
     }
   };
-  //================ design part ================\\
+  //========= design part start =========//
   return (
     <>
       {loading && (
@@ -126,5 +128,6 @@
     </>
   );
  };
+ //========= design part end =========//
 
  export default Navbar;

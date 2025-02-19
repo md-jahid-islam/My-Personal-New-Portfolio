@@ -1,7 +1,7 @@
  import React from 'react';
  import { Link } from 'react-router-dom';
  import Typewriter from 'typewriter-effect';
-
+ //=========== ProjectCard part start ===========//
  const ProjectCard = ({ image, title, category, liveLink, githubLink }) => (
   <div className="relative text-center w-72 transform hover:scale-105 hover:rotate-2 transition-all duration-500 ease-in-out ">
     <img
@@ -12,6 +12,7 @@
     <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white rounded-md">
       <h2 className="text-xl font-bold">{title}</h2>
       <h3 className="text-lg">
+        {/*Typewriter part start */}
         <Typewriter
           options={{
             strings: [category],
@@ -23,6 +24,9 @@
           }}
         />
       </h3>
+     {/*Typewriter part end */}
+
+    {/*View Live & GitHub part start*/}
       <div className="flex justify-center gap-4 mt-4">
         <Link to={liveLink} target="_blank" className="px-4 py-2 bg-[#FF204E] text-white rounded-full hover:bg-[#008DDA] transition duration-300">
           View Live
@@ -31,14 +35,16 @@
           GitHub
         </Link>
       </div>
+   {/*View Live & GitHub part end*/}
+
     </div>
   </div>
  );
-
+ //============== Portfolio projects added part start =======//
  const Portfolio = () => {
   const projects = [
     {
-      image: "https://ibb.co.com/8LTvYqNc",
+      image: "public/images/filtter.png",
       title: "Filtter website",
       category: "React, React-Redux, React Router DOM, react-toastify, react-icons, Tailwind CSS",
       liveLink: "https://filter-website-design-responsive.vercel.app/",
@@ -49,7 +55,7 @@
       title: "Orbi Project E-Shopping",
       category: "React incorporating React Paginate, React Redux, React Scripts, Redux Persist, React Router DOM, React Slick, Slick Carousel, Tailwind Scrollbar, Responsive, and Web Vitals.",
       liveLink: "https://orebi-showp-website-e-commerce.vercel.app/",
-      githubLink: "https://github.com/md-jahid-islam/Filter-website-design-Responsive-.git",
+      githubLink: "https://github.com/md-jahid-islam/OREBI-E-COMMERCE-WEBSITE.git",
     },
     {
       image: "public/images/filltervercel.png",
@@ -63,7 +69,7 @@
       title: "Corporate Brand",
       category: "reduxjs toolkit ,testing-library jest-dom , testing-library react ,react-redux, react-router-dom ,react-scripts ,react-slick ,react-toastify ,sass ,slick-carousel ,web-vitals ",
       liveLink: "https://cheap-deals-iota.vercel.app/",
-      githubLink: "https://github.com/md-jahid-islam/Cheap-Deals.git",
+      githubLink: "https://github.com/md-jahid-islam/Cheap-Deals-E-commerce-Shop.git",
     },
     {
       image: "public/images/apple.png",
@@ -80,11 +86,11 @@
       githubLink: "https://github.com/md-jahid-islam/Furniture-figma-project.git",
     },
     {
-      image: "public/images/business.png",
+      image: "public/images/carrental.png",
       title: "Business-Calculator-Consulting Ltd",
       category: "Business consulting calculator",
-      liveLink: "https://business-calculator-consulting-ltd.vercel.app/",
-      githubLink: "https://github.com/md-jahid-islam/Business-Calculator-Consulting-Ltd.git",
+      liveLink: "https://car-rental-website-design.vercel.app/",
+      githubLink: "https://github.com/md-jahid-islam/Car-Rental-website-design.git",
     },
     {
       image: "public/images/mixedit.png",
@@ -129,11 +135,10 @@
       githubLink: "https://github.com/md-jahid-islam/E-commerce-shop.git",
     },
     
-    
-    
-
   ];
-
+ //======== Portfolio projects added part end =======//
+ 
+ //======== design part start ===========//
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="header text-center">
@@ -149,5 +154,6 @@
     </div>
   );
  };
+ //======== design part end ===========//
 
  export default Portfolio;

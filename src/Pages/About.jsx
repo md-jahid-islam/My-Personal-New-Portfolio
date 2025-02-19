@@ -3,21 +3,21 @@
  import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaGitAlt, FaFigma } from 'react-icons/fa';
  import { SiTailwindcss, SiJquery, SiFirebase } from 'react-icons/si';
  import Typewriter from 'typewriter-effect';
- //================= Certificates ==============\\
   
- //===================== AboutSection part start 
+ //========= About Section part start ========//
  const AboutSection = () => (
   <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16  p-8 rounded-lg shadow-lg">
     {/* Section Title */}
     <div className="relative text-center sm:text-left pt-28 flex justify-center items-center flex-wrap ">
-      <h2 className="text-2xl font-bold text-blue-500">About Me</h2>
-      <div className="absolute border-2 border-blue-500 w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
+      <h2 className="text-2xl font-bold text-blue-500 border-2 w-32 h-10 ">About Me</h2>
+      <div className="absolute border-blue-500 w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
     </div>
     {/* About Details */}
     <div className="mt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center">
-      {/* About Text */}
+
+      {/* About Text Typewriter start */}
       <div>
-        <p className=" text-blue-500 leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl">
+        <p className=" text-blue-500 leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-b-green-600">
          Hi I'm Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
           <Typewriter 
             options={{
@@ -28,8 +28,10 @@
             }} 
           />
         </p>
-      </div>
-      {/* Personal Details */}
+      </div>      
+    {/* About Text Typewriter end */}
+
+      {/* Personal Details start */}
       <div className="text-sm sm:text-base mt-10 lg:mt-0 lg:ml-10 text-blue-500">
         {[{
           label: 'Name', value: 'Jahidul Islam'
@@ -57,15 +59,17 @@
     </div>
   </section>
 );
-
-//===================== EducationSection part start
+{/* Personal Details end */}
+ //========= About Section part end ========//
+ 
+//========== EducationSection part start ========//
 const EducationSection = () => (
-  <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg">
+  <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg font-semibold">
     <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left">Education</h2>
     <div className="divider mt-2 mb-4 text-blue-500 "></div>
 
     {[{
-      year: 'Degree ongoing Student Bachelor of Social Science -2024',
+      year: 'Degree ongoing (BSS-Department) Bachelor of Social Science-2025',
       title: 'Brindhabon Govt College Habiganj',
       description: 'Jahidul Islam is a student at Habiganj Govt College, pursuing a Bachelors degree in Social Science with a focus on (Humanities). He began his studies in 2025.'
     }, {
@@ -74,7 +78,7 @@ const EducationSection = () => (
       description: 'Jahidul Islam completed his Higher Secondary Certificate (HSC) in (Humanities) at Habiganj Kabir College Academy in 2023.'
     }, {
       year: 'Secondary School Certificate -2021',
-      title: 'Hazrat Shahjala High School Baniachong , Habiganj',
+      title: 'Hazrat Shahjala (R.) High School Baniachong , Habiganj',
       description: 'Jahidul Islam completed his Secondary School Certificate (SSC) in (Commerce) at Hazrat Shahjala (Ra.) High School, Baniachong, Habiganj, in 2021.'
     }].map((edu, index) => (
       <div key={index} className="education-item mt-12">
@@ -85,8 +89,9 @@ const EducationSection = () => (
     ))}
   </div>
  );
+ //========== EducationSection part end ========//
 
- //===================== ExperienceSection part start
+ //========== ExperienceSection part start ========//
  const ExperienceSection = () => (
   <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-blue-500 p-8 rounded-lg shadow-lg">
     <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left">Experience</h2>
@@ -114,8 +119,9 @@ const EducationSection = () => (
     
   </div>
  );
+  //========== ExperienceSection part end ========//
 
- //====================== SkillSection part start
+ //============= SkillSection part start ==========//
  const SkillSection = () => (
   <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16  p-8 rounded-lg shadow-lg">
     <div className="flex justify-center items-center relative mb-4">
@@ -174,15 +180,19 @@ const EducationSection = () => (
       ))}
     </div>
   </div>
-);
+ );
+  //============= SkillSection part end ==========//
 
-const MainComponent = () => (
+ //============= MainComponent part start ===========//
+ const MainComponent = () => (
   <div className="main-container">
     <AboutSection />
     <EducationSection />
     <ExperienceSection />
     <SkillSection />
   </div>
-);
+ );
+  //============= MainComponent part end ===========//
+ export default MainComponent;
 
-export default MainComponent;
+

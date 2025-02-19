@@ -7,13 +7,13 @@
  import LayoutOne from './Layout/LayoutOne';
  import Services from './Pages/Services';
  import Portfolio from './Pages/Portfolio';
-
+ //========= function app arranged Router stacture =========//
  function App() {
   const mainroute = createBrowserRouter(
     createRoutesFromElements(
       <Route>
         <Route path='/' element={<LayoutOne />}>
-          {/* Redirect root (/) to /home */}
+          {/* Redirect root to /home */}
           <Route index element={<Navigate to="/home" />} />
 
           <Route path='/home' element={<Home />} />
@@ -24,13 +24,11 @@
           <Route path='/contact' element={<Contact />} />
         </Route>
       </Route>
-    )
-  );
-
+    ));
   return (
-    <>
-      <RouterProvider router={mainroute} />
-    </>
+ <>
+ <RouterProvider router={mainroute} />
+ </>
   );
  }
 
