@@ -112,6 +112,7 @@
       {/* Header Section */}
       <div className="text-center">
         <h2 className="text-3xl font-bold dark:text-white mt-11 text-blue-500 "> My Services</h2>
+        <h3 className=" text-2xl font-bold dark:text-white text-orange-500  ">What I offer</h3>
         <div className="w-48 h-[3px] bg-blue-500 mx-auto my-2"></div>
         <h2 className="mt-4 text-lg md:text-2xl font-bold text-blue-500 dark:text-gray-300">
           Building Digital Products With Better Experience

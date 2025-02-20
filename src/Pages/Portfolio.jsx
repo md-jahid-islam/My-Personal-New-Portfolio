@@ -87,8 +87,8 @@
     },
     {
       image: "public/images/carrental.png",
-      title: "Business-Calculator-Consulting Ltd",
-      category: "Business consulting calculator",
+      title: "Car Rental E-commerce website ",
+      category: " aos react react-dom react-icons tailwindcss",
       liveLink: "https://car-rental-website-design.vercel.app/",
       githubLink: "https://github.com/md-jahid-islam/Car-Rental-website-design.git",
     },

@@ -2,33 +2,22 @@
  import CountUp from 'react-countup';
  import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaGitAlt, FaFigma } from 'react-icons/fa';
  import { SiTailwindcss, SiJquery, SiFirebase } from 'react-icons/si';
- import Typewriter from 'typewriter-effect';
-  
+
  //========= About Section part start ========//
  const AboutSection = () => (
   <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16  p-8 rounded-lg shadow-lg">
     {/* Section Title */}
     <div className="relative text-center sm:text-left pt-28 flex justify-center items-center flex-wrap ">
-      <h2 className="text-2xl font-bold text-blue-500 border-2 w-32 h-10 ">About Me</h2>
-      <div className="absolute border-blue-500 w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
+      <h2 className="text-2xl font-bold border-b-2  border-b-blue-500 text-blue-500 ">About Me</h2>
+      <div className="absolute w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
     </div>
     {/* About Details */}
     <div className="mt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center">
+      <p className="text-blue-500 leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-blue-600 ">
+      Hi I'm Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
+      </p>
+     
 
-      {/* About Text Typewriter start */}
-      <div>
-        <p className=" text-blue-500 leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-b-green-600">
-         Hi I'm Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
-          <Typewriter 
-            options={{
-              strings: ["continuous ", "learning", "and growth."],
-              autoStart: true,
-              loop: true,
-              delay: 75,
-            }} 
-          />
-        </p>
-      </div>      
     {/* About Text Typewriter end */}
 
       {/* Personal Details start */}
@@ -58,14 +47,14 @@
       </div>
     </div>
   </section>
-);
-{/* Personal Details end */}
+ );
+ {/* Personal Details end */}
  //========= About Section part end ========//
  
-//========== EducationSection part start ========//
-const EducationSection = () => (
+ //========== EducationSection part start ========//
+ const EducationSection = () => (
   <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg font-semibold">
-    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left">Education</h2>
+    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left">My Education</h2>
     <div className="divider mt-2 mb-4 text-blue-500 "></div>
 
     {[{
@@ -94,7 +83,7 @@ const EducationSection = () => (
  //========== ExperienceSection part start ========//
  const ExperienceSection = () => (
   <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-blue-500 p-8 rounded-lg shadow-lg">
-    <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left">Experience</h2>
+    <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left">My Experience</h2>
     <div className="divider bg-[#e2ecf6] mt-2 mb-4"></div>
     
     {[{
@@ -125,7 +114,7 @@ const EducationSection = () => (
  const SkillSection = () => (
   <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16  p-8 rounded-lg shadow-lg">
     <div className="flex justify-center items-center relative mb-4">
-      <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left">Coding Skills</h2>
+      <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left"> My Coding Skills</h2>
       <h3 className="absolute border-2 border-blue-500 w-[150px] sm:w-[200px] pt-10"></h3>
     </div>
     <div className="divider mt-[100px] mb-8"></div>

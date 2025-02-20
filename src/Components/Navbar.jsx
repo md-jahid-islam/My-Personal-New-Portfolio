@@ -113,7 +113,7 @@
           </ul>
 
           <div className="flex items-center space-x-4">
-            <button className="text-gray-800 dark:text-white bg-red-500 rounded-full transition-opacity" onClick={toggleTheme} aria-label="Toggle theme">
+            <button className="text-gray-800 dark:text-white bg-[#910A67] rounded-full transition-opacity" onClick={toggleTheme} aria-label="Toggle theme">
               {darkMode ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-6" />}
             </button>
 
