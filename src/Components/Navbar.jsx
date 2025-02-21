@@ -17,7 +17,6 @@
   { path: "/contact", name: "Contact", icon: <PhoneIcon className="w-5 h-5 inline mr-2" /> }
  ];
   //=========== all page path end ===========//
-
  const Navbar = () => {
   //======== useState =======//
   const [isOpen, setIsOpen] = useState(false);
