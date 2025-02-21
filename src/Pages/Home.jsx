@@ -74,9 +74,9 @@
 
         {/* Image Section */}
         <div className="relative mt-10 md:mt-0 md:w-1/2 flex justify-center md:justify-end md:mr-10">
-          <img className="w-40 h-40 md:w-56 md:h-56 rounded-full transition-transform duration-300 hover:scale-105" src="public/images/profile.png" alt="Main profile" />
-          <img className="absolute top-0 left-0 transform -translate-x-1/3 -translate-y-1/3 w-10 h-10 md:w-16 md:h-16 rounded-full animate-bounce ml-[320px]" src="public/images/img1.png" alt="Decorative icon 1" />
-          <img className="absolute bottom-0 right-0 transform translate-x-1/3 translate-y-1/3 w-8 h-8 md:w-12 md:h-12 rounded-full animate-spin" src="public/images/img2.png" alt="Decorative icon 2" />
+          <img className="w-40 h-40 md:w-56 md:h-56 rounded-full transition-transform duration-300 hover:scale-105" src="/images/profile.png" alt="Main profile" />
+          <img className="absolute top-0 left-0 transform -translate-x-1/3 -translate-y-1/3 w-10 h-10 md:w-16 md:h-16 rounded-full animate-bounce ml-[320px]" src="/images/img1.png" alt="Decorative icon 1" />
+          <img className="absolute bottom-0 right-0 transform translate-x-1/3 translate-y-1/3 w-8 h-8 md:w-12 md:h-12 rounded-full animate-spin" src="/images/img2.png" alt="Decorative icon 2" />
 
           <h3 className="absolute pt-[240px] text-xl md:text-2xl font-bold text-[#578FCA] ">MD.Jahidul Islam</h3>
            {/*Typewriter Section */}

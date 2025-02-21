@@ -14,7 +14,7 @@
       id: 1,
       title: "Firebase Development",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo mauris purus molestie fames.",
-      imgSrc: "public/images/firebase.png",
+      imgSrc: "/images/firebase.png",
       details: [
         "Authentication",
         "Realtime Database & Firestore",
@@ -32,7 +32,7 @@
       id: 2,
       title: "Visual Branding API",
       description: "A aliquam hac quis habitant dolor nunc metus sed. Sed commodo mauris purus molestie fames.",
-      imgSrc: "public/images/brand.png",
+      imgSrc: "/images/brand.png",
       details: [
         "Brand.dev",
         "BrandAPI",
@@ -45,7 +45,7 @@
       id: 3,
       title: "React Development",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo mauris purus molestie fames.",
-      imgSrc: "public/images/react.png",
+      imgSrc: "/images/react.png",
       details: [
         "Custom React Website design ",
         "React Component Library Development",
@@ -62,7 +62,7 @@
       id: 4,
       title: "Web Development",
       description: "Diam lacus faucibus eget dolor phasellus aliquam sit in. Eget ultricies turpis elit augue cras mauris lorem mauris.",
-      imgSrc: "public/images/webdevelop.png",
+      imgSrc: "/images/webdevelop.png",
       details: [
         "Custom Website Development",
         "Front-end Web Development",

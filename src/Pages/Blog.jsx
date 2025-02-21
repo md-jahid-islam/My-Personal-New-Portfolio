@@ -28,7 +28,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/website.png"
+              src="/images/website.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-5">
@@ -51,7 +51,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/mobail.png"
+              src="/images/mobail.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-5">
@@ -75,7 +75,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/website1.png"
+              src="/images/website1.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-4">
@@ -96,7 +96,7 @@
           >
             <img
               className="w-full h-[250px] object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-              src="public/images/website2.png"
+              src="/images/website2.png"
               alt="img"
             />
             <h2 className="text-[16px] font-bold text-white group-hover:text-[#FF204E] transition mt-4">
