@@ -112,12 +112,11 @@
       {/* Header Section */}
       <div className="text-center">
         <h2 className="text-3xl font-bold dark:text-white mt-11 text-blue-500 "> My Services</h2>
-        <h3 className=" text-2xl font-bold dark:text-white text-orange-500  ">What I offer</h3>
-        <div className="w-48 h-[3px] bg-blue-500 mx-auto my-2"></div>
+        <h3 className=" text-2xl font-bold dark:text-white text-blue-500 underline ">What I offer</h3>
         <h2 className="mt-4 text-lg md:text-2xl font-bold text-blue-500 dark:text-gray-300">
           Building Digital Products With Better Experience
         </h2>
-        <p className="mt-3 text-sm md:text-lg text-blue-500 dark:text-gray-400">
+        <p className="mt-3 text-sm md:text-lg text-blue-500 font-bold dark:text-gray-400">
           Our vision is to be a trailblazing force in the world of web design and development, recognized for  <br /> our unwavering commitment to excellence, integrity, and customer satisfaction.
         </p>
       </div>
@@ -127,20 +126,20 @@
         {allServices.slice(0, servicesToShow).map((service) => (
           <div key={service.id} className="relative text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-all transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
             <img className="w-20 h-20 mx-auto rounded-lg mt-5 hover:scale-110 transition duration-300" src={service.imgSrc} alt={service.title} />
-            <h2 className="text-lg md:text-xl font-bold text-[#4f4f4f] dark:text-gray-300 mt-5">{service.title}</h2>
+            <h2 className="text-lg md:text-xl font-bold text-blue-500 dark:text-gray-300 mt-5">{service.title}</h2>
 
-            <button onClick={() => toggleExpand(service.id)} className="block mt-4 text-lg text-[#4f4f4f] dark:text-gray-300 transform hover:scale-110 transition duration-300">
+            <button onClick={() => toggleExpand(service.id)} className="block mt-4 text-lg text-blue-500 dark:text-gray-300 transform hover:scale-110 transition duration-300">
               <TbArrowLeftFromArc className={`inline-block text-[20px] ${expanded === service.id ? "rotate-180" : ""} transition-transform duration-300`} />
             </button>
 
             {/* Expanded Description */}
             <div className={`overflow-hidden transition-all duration-500 ${expanded === service.id ? "max-h-80 opacity-100 mt-3" : "max-h-0 opacity-0"}`}>
-              <ul className="list-disc list-inside text-sm md:text-base text-[#4f4f4f] dark:text-gray-400">
+              <ul className="list-disc list-inside text-sm md:text-base text-blue-500 dark:text-gray-400">
                 {service.details.map((detail, index) => (
                   <li key={index}>{detail}</li>
                 ))}
               </ul>
-              <Link to="#" className="mt-3 inline-block text-sm font-semibold text-[#FF204E] hover:text-[#008DDA] transition duration-300">Read More</Link>
+              <Link to="#" className="mt-3 inline-block text-sm font-semibold text-[#008DDA] hover:text-[#FF204E] transition duration-300">Read More</Link>
             </div>
           </div>
         ))}
@@ -149,7 +148,7 @@
       {/* Load More Button */}
       {servicesToShow < allServices.length && (
         <div className="text-center mt-8">
-          <button onClick={loadMoreServices} className="text-[#FF204E] font-semibold hover:text-[#008DDA] transition duration-300">
+          <button onClick={loadMoreServices} className="text-[#008DDA] font-semibold hover:text-[#FF204E] transition duration-300">
             Load More Services
           </button>
         </div>

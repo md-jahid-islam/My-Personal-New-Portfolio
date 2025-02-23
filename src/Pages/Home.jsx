@@ -17,11 +17,11 @@
   const toggleTheme = () => {
     setDarkMode(!darkMode);
     if (!darkMode) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('light');
       localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
     }
   };
   //=========== deaign part start ==========//
@@ -52,7 +52,7 @@
               }}
             />
           </h2>
-          <p className="w-72 md:w-80 mt-5 text-[17px] text-blue-500 ">
+          <p className="w-72 md:w-80 mt-5 text-[17px] text-[#36C2CE] font-bold ">
             Hi, I'm Jahidul Islam, a passionate front-end developer specializing in creating dynamic and responsive web applications. Explore my portfolio to see my contributions to the tech community.
           </p>
           <div className="flex gap-5 mt-10">
@@ -68,7 +68,7 @@
             </Link>
           </div>
           <div>
-            <h2 className="text-lg md:text-xl font-semibold mt-7 text-blue-500 ">Trusted by World Leading Brands <br /> Portfolio!</h2>
+            <h2 className="text-lg md:text-xl font-semibold mt-7 text-[hsl(189,100%,56%)]">Trusted by World Leading Brands <br /> Portfolio!</h2>
           </div>
         </div>
 

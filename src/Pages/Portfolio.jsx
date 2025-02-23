@@ -142,8 +142,7 @@
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="header text-center">
-        <h2 className="text-3xl font-bold text-blue-500 mt-[100px]">Portfolio</h2>
-        <div className="w-40 h-[3px] bg-blue-500 mx-auto my-4"></div>
+        <h2 className="text-3xl font-bold text-blue-500 pt-10 underline ">Portfolio</h2>
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 mt-10">

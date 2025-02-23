@@ -8,12 +8,12 @@
   <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16  p-8 rounded-lg shadow-lg">
     {/* Section Title */}
     <div className="relative text-center sm:text-left pt-28 flex justify-center items-center flex-wrap ">
-      <h2 className="text-2xl font-bold border-b-2  border-b-blue-500 text-blue-500 ">About Me</h2>
-      <div className="absolute w-24 sm:w-32 mx-auto sm:mx-0 pt-10"></div>
+      <h2 className="text-3xl font-bold underline text-blue-500 ">About Me</h2>
+      <div className="absolute  sm:w-32 mx-auto sm:mx-0 "></div>
     </div>
     {/* About Details */}
     <div className="mt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center">
-      <p className="text-blue-500 leading-relaxed text-center lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-blue-600 ">
+      <p className="text-[hsl(189,100%,56%)] leading-relaxed text-center font-bold lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-blue-600 ">
       Hi I'm Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
       </p>
      
@@ -21,7 +21,7 @@
     {/* About Text Typewriter end */}
 
       {/* Personal Details start */}
-      <div className="text-sm sm:text-base mt-10 lg:mt-0 lg:ml-10 text-blue-500">
+      <div className="text-sm sm:text-base mt-10 lg:mt-0 lg:ml-10 text-[hsl(189,100%,56%)] font-bold ">
         {[{
           label: 'Name', value: 'Jahidul Islam'
         }, {
@@ -54,8 +54,8 @@
  //========== EducationSection part start ========//
  const EducationSection = () => (
   <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg font-semibold">
-    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left">My Education</h2>
-    <div className="divider mt-2 mb-4 text-blue-500 "></div>
+    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left underline ">My Education</h2>
+    <div className="divider mt-2 mb-4 text-blue-500 font-bold "></div>
 
     {[{
       year: 'Degree ongoing (BSS-Department) Bachelor of Social Science-2025',
@@ -71,9 +71,9 @@
       description: 'Jahidul Islam completed his Secondary School Certificate (SSC) in (Commerce) at Hazrat Shahjala (Ra.) High School, Baniachong, Habiganj, in 2021.'
     }].map((edu, index) => (
       <div key={index} className="education-item mt-12">
-        <div className="year bg-slate-700 py-2 px-4 text-blue-500">{edu.year}</div>
-        <h3 className="title font-bold text-lg mt-2">{edu.title}</h3>
-        <p className="description text-sm mt-2 text-blue-500">{edu.description}</p>
+        <div className="text-[hsl(189,100%,56%)] py-2 px-4 bg-[#008DDA] text-2xl ">{edu.year}</div>
+        <h3 className=" title font-bold text-xl mt-2 text-[hsl(189,100%,56%)]">{edu.title}</h3>
+        <p className="description font-bold text-xl mt-2 text-blue-500">{edu.description}</p>
       </div>
     ))}
   </div>
@@ -83,7 +83,7 @@
  //========== ExperienceSection part start ========//
  const ExperienceSection = () => (
   <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-blue-500 p-8 rounded-lg shadow-lg">
-    <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left">My Experience</h2>
+    <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left underline ">My Experience</h2>
     <div className="divider bg-[#e2ecf6] mt-2 mb-4"></div>
     
     {[{
@@ -97,11 +97,11 @@
     }].map((exp, index) => (
       
       <div key={index} className="experience-item mt-12">
-        <div className="period bg-slate-700 py-2 px-4 text-blue-500">{exp.period}</div>
+        <div className="period text-[hsl(189,100%,56%)] py-2 px-4 bg-[#008DDA] text-2xl ">{exp.period}</div>
         
-        <h3 className="title font-bold text-lg mt-2 text-blue-500">{exp.title}</h3>
+        <h3 className="title font-bold mt-2 text-xl text-[hsl(189,100%,56%)] ">{exp.title}</h3>
         
-        <p className="description text-sm mt-2 text-blue-500">{exp.description}</p>
+        <p className="description  mt-2 text-blue-500 text-xl">{exp.description}</p>
        
       </div>
     ))}
@@ -114,8 +114,8 @@
  const SkillSection = () => (
   <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16  p-8 rounded-lg shadow-lg">
     <div className="flex justify-center items-center relative mb-4">
-      <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left"> My Coding Skills</h2>
-      <h3 className="absolute border-2 border-blue-500 w-[150px] sm:w-[200px] pt-10"></h3>
+      <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left underline "> My Coding Skills</h2>
+      <h3 className="absolute sm:w-[200px] pt-10"></h3>
     </div>
     <div className="divider mt-[100px] mb-8"></div>
 
@@ -149,16 +149,16 @@
       }].map((skill, index) => (
         <div key={index} className="skill-item text-center transform transition duration-300 hover:scale-110">
           {/* Proficiency Circle with CountUp */}
-          <div className="relative w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full border-4 border-[#FF204E] flex justify-center items-center overflow-hidden transform transition-all duration-500 hover:bg-[#FF204E] hover:text-white">
+          <div className="relative w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full border-4 border-[rgb(32,36,255)] flex justify-center items-center overflow-hidden transform transition-all duration-500 hover:bg-[rgb(32,54,255)] hover:text-white">
             {/* Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 opacity-30"></div>
             {/* Proficiency Percentage */}
-            <CountUp end={skill.proficiency} suffix="%" duration={2} className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#FF204E] z-10" />
+            <CountUp end={skill.proficiency} suffix="%" duration={2} className="text-xl sm:text-2xl lg:text-3xl font-bold text-[rgb(32,54,255)] z-10" />
           </div>
 
           {/* Icon Inside Circle with Hover Effects */}
           <div className="icon absolute inset-0 flex justify-center items-center transform transition-all duration-500">
-            <div className=" p-4 rounded-full border-4 border-[#FF204E] flex justify-center items-center transform transition-all duration-300 hover:bg-[#FF204E] hover:text-white hover:scale-110">
+            <div className=" p-4 rounded-full border-4 border-[rgb(32,255,255)] flex justify-center items-center transform transition-all duration-300 hover:bg-[hsl(293,100%,56%)] hover:text-white hover:scale-110">
               {skill.icon}
             </div>
           </div>
@@ -171,7 +171,6 @@
   </div>
  );
   //============= SkillSection part end ==========//
-
  //============= MainComponent part start ===========//
  const MainComponent = () => (
   <div className="main-container">

@@ -85,7 +85,7 @@
   return (
     <>
       {loading && (
-        <div className="fixed inset-0 flex justify-center items-center bg-white dark:bg-[#1E1E2E] transition-all duration-1000 z-50">
+        <div className="fixed inset-0 flex justify-center items-center bg-[#f1f1f1] dark:bg-[#1D1616] transition-all duration-1000 z-50">
           <ClipLoader color={darkMode ? "#A6E3E9" : "#36C2CE"} loading={loading} size={70} />
         </div>
       )}
@@ -112,7 +112,7 @@
           </ul>
 
           <div className="flex items-center space-x-4">
-            <button className="text-gray-800 dark:text-white bg-[#910A67] rounded-full transition-opacity" onClick={toggleTheme} aria-label="Toggle theme">
+            <button className="text-gray-800 dark:text-white bg-[hsl(189,100%,56%)] rounded-full transition-opacity" onClick={toggleTheme} aria-label="Toggle theme">
               {darkMode ? <SunIcon className="w-6 h-6" /> : <MoonIcon className="w-6 h-6" />}
             </button>
 
