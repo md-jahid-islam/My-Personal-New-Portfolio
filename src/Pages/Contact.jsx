@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ClipLoader } from "react-spinners";
-import { FaPaperPlane, FaComments, FaTimes, FaGithub, FaFacebook, FaLinkedin, FaDownload, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPaperPlane, FaComments, FaTimes, FaGithub, FaFacebook, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () =>{
  //=============== useState ============//
@@ -43,6 +43,7 @@ const Contact = () =>{
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   //============== validateForm part end ============//
+  
  //============== handleSubmit part start ===========//
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -91,7 +92,7 @@ const Contact = () =>{
     <div className="container mx-auto px-4 sm:px-6 lg:px-16 text-center mt-20 relative">
       <h2 className="text-3xl font-bold text-blue-500 underline ">Contact Me</h2>
       <p className="mt-2 text-blue-500 text-5xl">Let’s Start A New Project</p>
-
+      
        {/* form handleSubmit part start */}
       <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-5 mt-8">
         <input type="text" name="name" placeholder="Enter Your Name" value={formData.name} onChange={handleChange}
@@ -111,6 +112,7 @@ const Contact = () =>{
           {loading ? <ClipLoader size={20} color="#fff" /> : <FaPaperPlane />} Send Message
         </button>
       </form>
+      
        {/* form handleSubmit part end */}
 
        {/* Present Address Permanent Address Phone part start */}

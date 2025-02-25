@@ -100,13 +100,6 @@
       githubLink: "https://github.com/md-jahid-islam/Mixedit-UP.git",
     },
     {
-      image: "/images/calculatore.png",
-      title: " Calculator",
-      category: " basic html css vanila.js javascript",
-      liveLink: "https://cal-jahidul-islams-projects-8d78bc5b.vercel.app/",
-      githubLink: "https://github.com/md-jahid-islam/calculatore.git",
-    },
-    {
       image: "/images/traveling.png",
       title: "Traveling",
       category: " react.js react router dom tailwind.css javascript farmwork bootstrap!!",

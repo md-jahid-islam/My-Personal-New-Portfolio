@@ -13,7 +13,7 @@
     </div>
     {/* About Details */}
     <div className="mt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center">
-      <p className="text-[hsl(189,100%,56%)] leading-relaxed text-center font-bold lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-blue-600 ">
+      <p className="text-[hsl(189,100%,56%)] leading-relaxed text-center font-bold lg:text-left lg:p-10 max-w-full sm:max-w-xl lg:max-w-3xl border-e-4 border-x-blue-300 ">
       Hi I'm Jahidul Islam is a passionate Frontend Developer specializing in React. He has over two years of experience building responsive and dynamic web applications using modern tools like React, Redux, and Tailwind CSS. With a keen eye for design, Jahidul also excels in integrating UI/UX principles, leveraging Figma for prototyping. He is proficient in technologies like JavaScript, Bootstrap, and Firebase. Currently, he is enhancing his backend skills by learning Node.js. Jahidul is committed to delivering high-quality, user-centric solutions. He is available for freelance opportunities and thrives on continuous learning and growth.
       </p>
      
@@ -54,7 +54,7 @@
  //========== EducationSection part start ========//
  const EducationSection = () => (
   <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg font-semibold">
-    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left underline ">My Education</h2>
+    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left underline ">My Academy Education</h2>
     <div className="divider mt-2 mb-4 text-blue-500 font-bold "></div>
 
     {[{
