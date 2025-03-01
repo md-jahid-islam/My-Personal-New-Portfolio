@@ -42,8 +42,7 @@ const Contact = () =>{
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  //============== validateForm part end ============//
-  
+  //============== validateForm part end ============// 
  //============== handleSubmit part start ===========//
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -183,7 +182,9 @@ const Contact = () =>{
         {showChatList ? <FaTimes size={24} /> : <FaComments size={24} />}
       </button>
     {/*toggleChatList button part end */}
-
+    <div>
+      
+    </div>
       {/*showChatList part start */}
       {showChatList && (
         <div className="fixed bottom-20 right-5 w-80 h-96 bg-white border-2 border-gray-300 rounded-lg shadow-lg p-4 overflow-y-auto">
