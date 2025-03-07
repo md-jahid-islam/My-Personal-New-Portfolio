@@ -7,7 +7,7 @@
  import LayoutOne from './Layout/LayoutOne';
  import Services from './Pages/Services';
  import Portfolio from './Pages/Portfolio';
- //========= function app arranged Router stacture =========//
+ //========= function app arranged Router structure =========//
  function App() {
   const mainroute = createBrowserRouter(
     createRoutesFromElements(
@@ -22,6 +22,7 @@
           <Route path='/blog' element={<Blog />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
+
         </Route>
       </Route>
     ));
