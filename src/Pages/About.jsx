@@ -4,9 +4,7 @@ import AboutComponents from '../Components/AboutComponents'
 const About = () => {
   return (
     <>
-    
     <AboutComponents/>
-    
     </>
   )
 }

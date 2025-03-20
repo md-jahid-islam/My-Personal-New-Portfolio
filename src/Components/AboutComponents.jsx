@@ -3,8 +3,8 @@ import CountUp from 'react-countup';
 import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaGitAlt, FaFigma } from 'react-icons/fa';
 import { SiTailwindcss, SiJquery, SiFirebase } from 'react-icons/si';
 
-//========= About Section part start ========//
-const AboutSection = () => (
+ //========= About Section part start ========//
+ const AboutSection = () => (
  <section className="about-section container mx-auto mt-5 px-4 sm:px-6 md:px-8 lg:px-16  p-8 rounded-lg shadow-lg">
    {/* Section Title */}
    <div className="relative text-center sm:text-left pt-28 flex justify-center items-center flex-wrap ">
@@ -46,13 +46,13 @@ const AboutSection = () => (
        ))}
      </div>
    </div>
- </section>
-);
-{/* Personal Details end */}
-//========= About Section part end ========//
+  </section>
+ );
+ {/* Personal Details end */}
+ //========= About Section part end ========//
 
-//========== EducationSection part start ========//
-const EducationSection = () => (
+ //========== EducationSection part start ========//
+ const EducationSection = () => (
  <div className="education-section container px-4 sm:px-6 lg:px-16 bg-gradient-to-l  p-8 rounded-lg shadow-lg font-semibold">
    <h2 className="text-2xl font-bold text-blue-500 pt-10 text-center sm:text-left underline ">My Academy Education</h2>
    <div className="divider mt-2 mb-4 text-blue-500 font-bold "></div>
@@ -77,11 +77,11 @@ const EducationSection = () => (
      </div>
    ))}
  </div>
-);
-//========== EducationSection part end ========//
+ );
+ //========== EducationSection part end ========//
 
-//========== ExperienceSection part start ========//
-const ExperienceSection = () => (
+ //========== ExperienceSection part start ========//
+ const ExperienceSection = () => (
  <div className="experience-section container mt-[20px] px-4 sm:px-6 lg:px-16 bg-gradient-to-r  text-blue-500 p-8 rounded-lg shadow-lg">
    <h2 className="text-2xl font-bold text-blue-500 text-center sm:text-left underline ">My Experience</h2>
    <div className="divider bg-[#e2ecf6] mt-2 mb-4"></div>
@@ -107,11 +107,11 @@ const ExperienceSection = () => (
    ))}
    
  </div>
-);
+ );
  //========== ExperienceSection part end ========//
 
-//============= SkillSection part start ==========//
-const SkillSection = () => (
+ //============= SkillSection part start ==========//
+ const SkillSection = () => (
  <div className="skill-section container mt-16 px-4 sm:px-6 lg:px-16  p-8 rounded-lg shadow-lg">
    <div className="flex justify-center items-center relative mb-4">
      <h2 className="relative text-2xl font-bold text-blue-500 text-center sm:text-left underline "> My Coding Skills</h2>
@@ -169,18 +169,18 @@ const SkillSection = () => (
      ))}
    </div>
  </div>
-);
+ );
  //============= SkillSection part end ==========//
-//============= MainComponent part start ===========//
-const MainComponent = () => (
+ //============= MainComponent part start ===========//
+ const MainComponent = () => (
  <div className="main-container">
    <AboutSection />
    <EducationSection />
    <ExperienceSection />
    <SkillSection />
  </div>
-);
+ );
  //============= MainComponent part end ===========//
-export default MainComponent;
+ export default MainComponent;
 
 
