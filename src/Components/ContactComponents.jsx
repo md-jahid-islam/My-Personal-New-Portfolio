@@ -3,9 +3,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ClipLoader } from "react-spinners";
 import { FaPaperPlane, FaGithub, FaFacebook, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import UserFromComponents from "./UserFromComponents";
 
-const ContactComponents = () => {
+ const ContactComponents = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
@@ -95,10 +94,9 @@ const ContactComponents = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7882750495895!2d90.366667914982!3d23.791788684570996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41a8323b3a1%3A0xb37e8efb77a5b5b2!2sUttara%20Azimpur!5e0!3m2!1sen!2sbd!4v1708365826925!5m2!1sen!2sbd"
           width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <UserFromComponents />
       <ToastContainer />
     </div>
   );
-};
+ };
 
-export default ContactComponents;
+ export default ContactComponents;
