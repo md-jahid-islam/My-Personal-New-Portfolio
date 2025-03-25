@@ -24,7 +24,7 @@ import { FaWhatsapp, FaFacebookMessenger, FaBars, FaTimes } from "react-icons/fa
     <nav>
     <div className="container flex justify-end items-center ">
       <div className='relative'>
-      <h2>📲📲 Connect on WhatsApp | 💬!! <br /> Message on Messenger Click Now!</h2>
+      {/* <h2>📲📲 Connect on WhatsApp | 💬!! <br /> Message on Messenger Click Now!</h2> */}
         
         <button onClick={toggleButtons} className="text-2xl p-3 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full shadow-lg border-2 border-gray-200 hover:scale-110 transition-all duration-300">
         {isVisible ? <FaTimes /> : <FaBars />}
